@@ -33,7 +33,7 @@ else:
 while True :
 print ('waiting for a connection...' )
 
-client_message, client_address = socket.recvfrom( 1024 *3 )
+client_message, client_address = socket.recvfrom( 3096 )
 
 result = str (math(client_message))
 
