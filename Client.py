@@ -8,7 +8,7 @@ message = []
 
 operation = input ('''
 Net-Centric Mathematics Server
-Please select an operation to perform:
+Please select a maths operation to perform:
 1 - Addidtion
 2 - Subtraction
 3 - Multiplication
@@ -30,7 +30,7 @@ message = ',' .join(message)
 
 socket.sendto(message,( '127.0.0.1' , 7777))
 
-server_result, server_address = socket.recvfrom( 1024 *3 )
+server_result, server_address = socket.recvfrom( 3096 )
 print ( 'server result: ' + server_result)
 
 socket.close() ;
